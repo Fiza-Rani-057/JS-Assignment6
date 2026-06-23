@@ -84,7 +84,7 @@ var per3 = (obtained3 / totalMarks) * 100;
 
 var totalObtained = obtained1 + obtained2 + obtained3;
 var totalMarksAll = totalMarks * 3;
-var totalPercentage = (totalObtained / totalMarksAll) * 100;
+var totalPercentage = ((totalObtained / totalMarksAll) * 100).toFixed(2);
 
 //   print using table 
 
@@ -94,7 +94,7 @@ var totalPercentage = (totalObtained / totalMarksAll) * 100;
  document.write("<th> Subject </th>");
  document.write("<th>Total Marks </th>");
  document.write("<th>Obtained Marks </th>");
- document.write("<th> Percentage</th>");
+ document.write("<th>Percentage</th>");
  document.write("</tr>");
 
  document.write("<tr>");
@@ -124,7 +124,7 @@ var totalPercentage = (totalObtained / totalMarksAll) * 100;
  document.write("<th>Total</th>");
  document.write("<th>" + totalMarksAll + "</th>");
  document.write("<th>" + totalObtained + "</th>");
- document.write("<th>" + totalPercentage + "%</th>");
+ document.write("<th>" + totalPercentage + " %</th>" );
  document.write("</tr>");
 
  document.write("</table>");
