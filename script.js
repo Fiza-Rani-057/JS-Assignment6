@@ -31,6 +31,15 @@ document.write( "<h1>" + "Question 2" + "<br>"  + "</h1>");
  document.write("b = " + b + "<br>");
  document.write("Result:" + result);
 
-
+// Question 3 
     
+document.write( "<h1>" + "Question 3" + "<br>"  + "</h1>");
+
+ var userName = prompt("Enter your name");
+
+ document.write("Hello"  + " "+ userName);
+
+//  Question 4
+
+ document.write( "<h1>" + "Question 4" + "<br>"  + "</h1>");
  
