@@ -60,20 +60,71 @@ document.write( "<h1>" + "Question 3" + "<br>"  + "</h1>");
  
   document.write( "<h1>" + "Question 5" + "<br>"  + "</h1>");
 
+//    subjects name 
+
  var sub1 = prompt("Enter first subject name");
  var sub2 = prompt("Enter second subject name");
  var sub3 = prompt("Enter third subject name");
 
  var totalMarks = 100;
- 
+    
+//    obtained marks 
+
  var obtained1 = parseInt(prompt("Enter obtained marks of:"  + sub1));
  var obtained2 = parseInt(prompt("Enter obtained marks of:"  + sub2));
  var obtained3 = parseInt(prompt("Enter obtained marks of:" + sub3));
 
- var   total = totalMarks *3;
- var percentage = (total/obtained) *100;
+// percentage of each subject 
+  
+var per1 = (obtained1 / totalMarks) * 100;
+var per2 = (obtained2 / totalMarks) * 100;
+var per3 = (obtained3 / totalMarks) * 100;
 
+//  percentage for all subjects
 
+var totalObtained = obtained1 + obtained2 + obtained3;
+var totalMarksAll = totalMarks * 3;
+var totalPercentage = (totalObtained / totalMarksAll) * 100;
 
+//   print using table 
+
+ document.write("<table>");
+
+ document.write("<tr>");
+ document.write("<th> Subject </th>");
+ document.write("<th>Total Marks </th>");
+ document.write("<th>Obtained Marks </th>");
+ document.write("<th> Percentage</th>");
+ document.write("</tr>");
+
+ document.write("<tr>");
+ document.write("<td>" + sub1 + "</td>");
+ document.write("<td>" + totalMarks + "</td>");
+ document.write("<td>" + obtained1 + "</td>");
+ document.write("<td>" +  per1 + "</td>");
+ document.write("</tr>");
 
  
+ document.write("<tr>");
+ document.write("<td>" + sub2 + "</td>");
+ document.write("<td>" + totalMarks + "</td>");
+ document.write("<td>" + obtained2 + "</td>");
+ document.write("<td>" +  per2 + "</td>");
+ document.write("</tr>");
+
+ 
+ document.write("<tr>");
+ document.write("<td>" + sub3 + "</td>");
+ document.write("<td>" + totalMarks + "</td>");
+ document.write("<td>" + obtained3 + "</td>");
+ document.write("<td>" +  per3 + "</td>");
+ document.write("</tr>");
+
+ document.write("<tr>");
+ document.write("<th>Total</th>");
+ document.write("<th>" + totalMarksAll + "</th>");
+ document.write("<th>" + totalObtained + "</th>");
+ document.write("<th>" + totalPercentage + "%</th>");
+ document.write("</tr>");
+
+ document.write("</table>");
