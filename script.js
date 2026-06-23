@@ -56,4 +56,24 @@ document.write( "<h1>" + "Question 3" + "<br>"  + "</h1>");
  document.write(number* 9 + "<br>");
  document.write(number* 10 + "<br>");
 
+//  Question 6 & 7
+ 
+  document.write( "<h1>" + "Question 5" + "<br>"  + "</h1>");
 
+ var sub1 = prompt("Enter first subject name");
+ var sub2 = prompt("Enter second subject name");
+ var sub3 = prompt("Enter third subject name");
+
+ var totalMarks = 100;
+ 
+ var obtained1 = parseInt(prompt("Enter obtained marks of:"  + sub1));
+ var obtained2 = parseInt(prompt("Enter obtained marks of:"  + sub2));
+ var obtained3 = parseInt(prompt("Enter obtained marks of:" + sub3));
+
+ var   total = totalMarks *3;
+ var percentage = (total/obtained) *100;
+
+
+
+
+ 
